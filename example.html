@@ -1,11 +1,32 @@
 <!doctype html>
 <html lang="en">
-   <script type="text/javascript" src="jcvd.js"></script>
-   <script type="text/javascript">
-   // TODO: some sample scripts.
+    <script type="text/javascript" src="jcvd.js"></script>
+    <script type="text/javascript">
+    // TODO: some sample scripts.
+    var q, s=[];
+    q = "I am the Fred Astaire of karate.";
+    s = JeanClaude.splits(q, " ");
+    console.log(s);
    </script>
 <body>
     <h1>Samples</h1>
+
+    <h3>JeanClaude.splits(string, seperatror, limit);</h3>  
+    <span>returns array</span>
+    <p>Jean-Claude splits your string.</p>
+    <pre>
+        var q, s=[];
+        q = "I am the Fred Astaire of karate.";
+        s = JeanClaude.splits(q, " ");
+        console.log(s);
+    </pre>
     
+    <h3>void JeanClaude.dimMak();</h3>
+    <span>void</span>
+    <p>Jean-Claude gives the window the 'touch of death'. No prompts. No mercy.</p>
+    <pre>
+        JeanClaude.dimMak();
+    </pre>
+    <input type="button" value="Jean Claude? Destroy this window." onclick="JeanClaude.dimMak()">
 </body>
 </html>
