@@ -24,7 +24,7 @@ THE SOFTWARE.
 (function () {
     var karate = this, JeanClaude = JeanClaude || {};
 	karate.JeanClaude = JeanClaude;
-    JeanClaude.VERSION = '0.0.1';
+	JeanClaude.VERSION = '0.0.1';
 
 	//TODO: documentation.
 	JeanClaude.splits = function(str, separator, limit){
