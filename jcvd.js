@@ -35,5 +35,20 @@ THE SOFTWARE.
 	JeanClaude.dimMak = function() {
 		window.open('', '_self', ''); 
 		window.close();
-	}
+	};
+	
+	JeanClaude.bloodSport = function(selector){
+		selector = selector || '*'
+		var victims = document.querySelectorAll(selector);
+		if (victims) {
+			for( var i = 0, l = victims.length; i < l; i++ ) {
+				var victim = victims[i];
+				victim.style.color = 'red';
+				victim.style.backgroundColor = 'DarkRed';
+			}
+			return;
+		}
+		alert('You FAIL!!');
+	};
+		
 })();
